@@ -1,4 +1,8 @@
 // Esto trae a la libreria iostream
+/*
+ * Comentarios largos
+ *
+ */
 #include <iostream>
 
 auto main(int argc, char *argv[]) -> int {

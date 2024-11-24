@@ -19,7 +19,13 @@ std::string printSums(int n1, int n2){
 
 int main(int argc, char **argv){
 
-    std::cout << printSums(10, 10) << std::endl;
+    int n1 = 10;
+    int n2 = 10;
+
+    std::cout << "Primer num: " << n1 << std::endl;
+    std::cout << "Segundo num: " << n2 << std::endl;
+
+    std::cout << "Suma de ambos num: " << printSums(n1, n2) << std::endl;
 
     return 0;
 }

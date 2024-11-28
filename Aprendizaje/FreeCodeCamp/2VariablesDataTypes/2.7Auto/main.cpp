@@ -1,5 +1,6 @@
 #include <iostream>
 #include <typeinfo>
+#include <string>
 
 int main(){
     auto var1 {12};
@@ -7,6 +8,7 @@ int main(){
     auto var3 {14.0f};
     auto var4 {15.0l};
     auto var5 {'e'};
+    std::string cadena;
 
     auto var6 {123u};
     auto var7 {123ul};
@@ -23,6 +25,6 @@ int main(){
     std::cout << "var8 ocupa : " << sizeof(var8) << " bytes " << std::endl;
     std::cout << "var9 ocupa : " << sizeof(var9) << " bytes " << std::endl;
 
-
+    
     return 0;
 }

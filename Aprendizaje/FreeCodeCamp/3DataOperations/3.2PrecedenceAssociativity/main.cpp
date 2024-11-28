@@ -18,5 +18,8 @@ int main(){
     result = a/b*c + d -e + f;
     std::cout << "Resultado: " << result << std::endl;
 
+    result = (a + b) * c - d/e -f + g;
+    std::cout << "Resultado () : " << result << std::endl;
+
     return 0;
 }

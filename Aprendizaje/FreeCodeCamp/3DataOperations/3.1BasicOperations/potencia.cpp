@@ -16,6 +16,7 @@ int main(){
 
     std::cout << "El cuadrado es: " << cuadrado << std::endl;
     std::cout << "El cubo es: " << cubo << std::endl;
+    std::cout << "Direccion en memoria: " << &num << std::endl;
 
 
     return 0;

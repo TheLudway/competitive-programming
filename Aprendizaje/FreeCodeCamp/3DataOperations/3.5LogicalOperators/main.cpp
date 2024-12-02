@@ -39,8 +39,9 @@ int main(){
     int e {20};
     int f {11};
 
+    std::cout << std::noboolalpha;
     std::cout << std::endl;
-    std::cout << "Operaciones relacionales y logicas con enteros" << std::endl;
+    std::cout << "Operaciones relacionales y logicas con enteros y con std::noalphabool" << std::endl;
     std::cout << "d : " << d << std::endl;
     std::cout << "e : " << e << std::endl;
     std::cout << "f : " << f << std::endl;
@@ -49,7 +50,12 @@ int main(){
 
     std::cout << "(d > e) && (d > f) : "<< ((d > e) && (d > f)) << std::endl;
     std::cout << "(d == 3) || (e <= f ) : " << ((d == e) || (e <= f)) << std::endl;
-    // std::cout << ""
+    std::cout << "(d < e) || (d > f) : " << ((d < e) || (d > f)) << std::endl;
+    std::cout << "(f > e) || (d < f) : " << ((f > e) || (d < f)) << std::endl;
+    std::cout << "(d > f) && (f <= d) : " << ((d > f) && (f <= d)) << std::endl;
+    std::cout << "(d > e) && (d <= f) : " << ((d > e) && (d <= f)) << std::endl;
+    std::cout << "(! a) && (d == e) : " << ((!a) && (d == e)) << std::endl;
+    std::cout << "(! a) && (d == e) : " << ((!a) && (d == e)) << std::endl;
 
     return 0;
 }

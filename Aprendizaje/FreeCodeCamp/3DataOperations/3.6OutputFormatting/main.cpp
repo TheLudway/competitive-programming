@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 
+
 int main(){
 
     // std::endl : Colca un nuevo caracter de linea en la salida del stream
@@ -143,6 +144,123 @@ int main(){
     std::cout << std::endl;
     std::cout << std::noshowpos;
     std::cout << "pos_num : " << pos_num << std::endl;
+    std::cout << "neg_num : " << neg_num << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "--------------- std::dec, std::hex, std::oct ---------------" << std::endl;
+
+    int pos_int {717171};
+    int neg_int {-47347};
+    double double_var {498.32};
+
+    std::cout << std::endl;
+    std::cout << "Formateo en base normal : " << std::endl;
+    std::cout << "pos_int : " << pos_int << std::endl;
+    std::cout << "neg_int : " << neg_int << std::endl;
+    std::cout << "double_var : " << double_var << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "pos_int en diferentes bases : " << std::endl;
+    std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
+    std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
+    std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "neg_int en diferentes bases : " << std::endl;
+    std::cout << "neg_int (dec) : " << std::dec << neg_int << std::endl;
+    std::cout << "neg_int (hex) : " << std::hex << neg_int << std::endl;
+    std::cout << "neg_int (oct) : " << std::oct << neg_int << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "double_var en diferentes bases : " << std::endl;
+    std::cout << "double_var (dec) : " << std::dec << double_var << std::endl;
+    std::cout << "double_var (hex) : " << std::hex << double_var << std::endl;
+    std::cout << "double_var (oct) : " << std::oct << double_var << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "--------------- uppercase & nouppercase ---------------" << std::endl;
+
+    pos_int = 717171;
+
+
+    std::cout << "pos_int (nouppercase : por defecto) : " << std::endl;
+    std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
+    std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
+    std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "pos_int (uppercase) : " << std::endl;
+    std::cout << std::uppercase;
+    std::cout << "pos_int (dec) : " << std::dec << pos_int << std::endl;
+    std::cout << "pos_int (hex) : " << std::hex << pos_int << std::endl;
+    std::cout << "pos_int (oct) : " << std::oct << pos_int << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "--------------- Formateo de flotantes ---------------" << std::endl;
+
+    double a {3.1415926535897932384626433832795};
+    double b {2006.0};
+    double c {1.34e-10};
+
+    std::cout << std::endl;
+    std::cout << "valores double (defacult : usar notacion cientifica cuando sea necesario) : " << std::endl;
+    std::cout << "a : " << a << std::endl;
+    std::cout << "b : " << b << std::endl;
+    std::cout << "c : " << c << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "valores double (fixed) : " << std::endl;
+    std::cout << std::fixed;
+    std::cout << "a : " << a << std::endl;
+    std::cout << "b : " << b << std::endl;
+    std::cout << "c : " << c << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "valores double (cientifica) : " << std::endl;
+    std::cout << std::scientific;
+    std::cout << "a : " << a << std::endl;
+    std::cout << "b : " << b << std::endl;
+    std::cout << "c : " << c << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "valores double (volver a los predeterminados) : " << std::endl;
+    std::cout.unsetf(std::ios::scientific | std::ios::fixed);
+    std::cout << "a : " << a << std::endl;
+    std::cout << "b : " << b << std::endl;
+    std::cout << "c : " << c << std::endl;
+
+    std::cout << std::endl;
+    a = 3.1415926535897932384626433832795;
+
+    std::cout << "setprecision() : numero de digitos para ser impresos de un numero flotante, por defecto 6" << std::endl;
+    std::cout << "a (default (6)) : " << a << std::endl;
+    std::cout << std::setprecision(10);
+    std::cout << "a (precision(10)) : " << a << std::endl;
+    std::cout << std::setprecision(20);
+    std::cout << "a (precision(20)) : " << a << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "-----showpoint y noshowpoint : muestra los ceros si son necesarios-----" << std::endl;
+    std::cout << std::setprecision(6);
+    double d {34.1};
+    double e {101.99};
+    double f {12.0};
+    int g {55};
+
+    std::cout << std::endl;
+    std::cout << "noshowpoint (defecto) : " << std::endl;
+    std::cout << "d : " << d << std::endl;
+    std::cout << "e : " << e << std::endl;
+    std::cout << "f : " << f << std::endl;
+    std::cout << "g : " << std::dec << g << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "showpoint: " << std::endl;
+    std::cout << std::showpoint;
+    std::cout << "d : " << d << std::endl;
+    std::cout << "e : " << e << std::endl;
+    std::cout << "f : " << f << std::endl;
+    std::cout << "g : " << g << std::endl;
 
 
 

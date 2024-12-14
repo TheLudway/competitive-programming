@@ -1,5 +1,6 @@
 #include <iostream>
 #include <random>
+#include <string>
 
 int main(){
 
@@ -62,9 +63,65 @@ int main(){
     }while(n4_2 != n4_1);
 
 
+    for (size_t i {1} ; i <= 50 ; i++){
+        if ((i % 3 == 0) & (i % 5 == 0) ){
+            std::cout << i << ": FizzBuzz" << std::endl;
+        }else if (i % 3 == 0){
+            std::cout << i << ": Fizz" << std::endl;
+        }else if (i % 5 == 0){
+            std::cout << i << ": Buzz" << std::endl;
+        }else{
+            std::cout << i << std::endl;
+        }
+    }
 
-    
+    int n {};
+    bool val {};
 
+    while (n != 0){
+        std::cout << "Ingrese un numero para verificar si es primo" << std::endl;
+        std::cin >> n;
+        val = true;
+        for (int i {2} ; i <= n/2 ; i++){
+            if (n % i == 0){
+                val = false;
+                break;
+            }
+        }
+        if (val){
+            std::cout << "Es primo" << std::endl;
+        }else{
+            std::cout << "No es primo" << std::endl;
+        }
+    }
+
+    std::cout << "Simulador de ATM" << std::endl;
+
+    int balance {1000};
+    std::string opcion {};
+    int n10 {};
+
+
+    while (opcion != "Quit"){
+        std::cout << "Qué opción desea escoger? (Depositar, Retirar, Consultar)" << std::endl;
+        std::cin >> opcion;
+
+        if (opcion == "Depositar"){
+            std::cout << "Ha seleccionado la opción de depositar, ingrese cuánto dinero desea depositar" << std::endl;
+            std::cin >> n10;
+            balance += n10;
+        }else if (opcion == "Retirar"){
+            std::cout << "Ha seleccionado la opción de retirar, ingrese cuánto dinero desea retirar. Recuerde tener suficientes fondos" << std::endl;
+            std::cin >> n10;
+            if (balance >= n10){
+                balance -= n10;
+            }else {
+                std::cout << "No posee suficientes fondos" << std::endl;
+            }
+        }else if (opcion == "Consultar"){
+            std::cout << "Su saldo es de: " << balance << std::endl;
+        }
+    }
 
 
 

@@ -79,7 +79,15 @@ int main(){
     std::cout << "Num en entero " << n2 << std::endl;
     std::cout << "Num en string " << std::to_string(n2) << std::endl;
     std::cout << "Num de vuelta a entero " << std::stoi(std::to_string(n2)) << std::endl;
-    std::cout << std::to_string(n2)[5] << std::endl;
+    std::cout << std::to_string(n2) << std::endl;
+
+    std::cout << "Recorrer string" << std::endl;
+    auto size {std::size(std::to_string(n2))};
+
+    for (size_t i {0} ; i < size ; i++){
+        std::cout << std::to_string(n2)[i] << std::endl;
+    }
+
 
     return 0;
 }

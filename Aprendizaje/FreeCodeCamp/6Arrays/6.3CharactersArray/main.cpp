@@ -55,13 +55,26 @@ int main(){
 
     std::cout << std::endl;
     std::cout << "Cadenas completas con espacios" << std::endl;
-    char message5 [] {"Hola Mundo!"};
+    char message5 [] {"Hola Mundooooooooooooooooooooooooooooooooo!"};
     std::cout << "message5 : " << message5 << std::endl;
+    std::cout << "sizeof(message5): " << sizeof(message5) << std::endl;
     std::cout << "size : " << std::size(message5) << std::endl;
 
-    for (size_t i {0} ; i < std::size(message5) ; i++){
+    for (size_t i {0} ; i < std::size(message5)-1 ; i++){
         std::cout << "message5[" << i << "]" << message5[i] << std::endl;
     }
+
+    std::cout << "Literales de String pero con std::strign" << std::endl;
+    std::string holaString {"Hola Mundooooooooooooooooooooooooooooooooo!"};
+    std::cout << "holaString : " << holaString << std::endl;
+    std::cout << "sizeof(holaString) : " << sizeof(holaString) << std::endl;
+    std::cout << "size : " << std::size(holaString) << std::endl;
+
+    for (size_t i {0} ; i < std::size(holaString) ; i++) {
+        std::cout << "holaString[" << i << "]" << holaString[i] << std::endl;
+    }
+
+    
 
     int n1 {1000};
     std::string n_string {std::to_string(n1)};
@@ -89,5 +102,5 @@ int main(){
     }
 
 
-    return 0;
+    return 1;
 }

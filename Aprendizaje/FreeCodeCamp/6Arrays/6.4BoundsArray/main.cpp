@@ -12,6 +12,5 @@ int main(){
     numbers[1299999] = 1000;
     std::cout << "numbers[1299999] : " << numbers[1299999] << std::endl;
     std::cout << "Hmmm..." << std::endl;
-
     return 0;
 }

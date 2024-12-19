@@ -84,12 +84,16 @@ int main(){
 
     delete p_number5;
 
-    int ival = 1024;
-    int *pi = &ival;
-    int **ppi = &pi;
-    int *&r = pi;
+
 
     std::cout << "Finalizar programa\n";
+
+    const double pi = 3.14;
+    const double *cptr = &pi;
+
+    const int x {3 };
+
+
 
 
     return 0;

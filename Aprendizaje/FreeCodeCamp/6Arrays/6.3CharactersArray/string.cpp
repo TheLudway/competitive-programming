@@ -22,13 +22,17 @@ int main(){
             arr[i] = str;
         }
 
-        for (int i {0}; i < a ; i++){
-            std::cout << arr[i] << " ";
+        for(const std::string &text : arr){
+            std::cout << "Value of text: " << text << std::endl;
         }
+
         std::cout << std::endl;
 
         std::cin >> a;
     }
+    
+
+
 
     return 0;
 }

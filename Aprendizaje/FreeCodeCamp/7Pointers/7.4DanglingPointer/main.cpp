@@ -35,6 +35,7 @@ int main(){
     delete p_number3;
     p_number3 = nullptr;
 
+
     // p_number4 apunta a una memoria eliminad. Esto hace que su valor sea un valor no deseado.
     std::cout << "p_number4(despues de eliminar p_number3) - " << p_number4 << " - " << *p_number4 << std::endl;
 

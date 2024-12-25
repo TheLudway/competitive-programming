@@ -40,10 +40,10 @@ int main(){
     }
 
     int *p_scores1 = new int[10] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // Vive en el heap
-    // std::cout << "p_scores1 size : " << std::size(p_scores1) << std::endl;
-    // for(auto i : p_scores1){
-    //     std::cout << "Value : " << i << std::endl;
-    // }
+    std::cout << "p_scores1 size : " << std::size(p_scores1) << std::endl;
+    for(auto i : p_scores1){
+        std::cout << "Value : " << i << std::endl;
+    }
 
 
     return 0;

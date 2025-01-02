@@ -17,3 +17,9 @@ gdb main
 ```
 
 Y yap, las demás opciones de debuggear se pueden leer en cualquier tabla de comandos de `gdb`.
+
+También, a veces me da por ver cómo es el código en Assembly usando el compilador de GNU con la siguiente opción
+
+``` sh
+g++ -S main.cpp
+```

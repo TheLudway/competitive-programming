@@ -29,5 +29,35 @@ int main(){
     std::cout << "sizeof(double&) : " << sizeof(double&) << "\n";
     std::cout << "sizeof(reference_to_double_value1) : " << sizeof(reference_to_double_value1) << "\n";
 
+    int_value = 111;
+    double_value = 67.2;
+    std::cout << "int_value : " << int_value << "\n";
+    std::cout << "&int_value : " << &int_value << "\n";
+    std::cout << "double_value : " << double_value << "\n";
+    std::cout << "&double_value : " << &double_value << "\n";
+
+    std::cout << "===============\n";
+
+    std::cout << "reference_to_int_value1 : " << reference_to_int_value1 << "\n";
+    std::cout << "&reference_to_int_vlaue1 : " << &reference_to_int_value1 << "\n";
+    std::cout << "reference_to_double_value1 : " << reference_to_double_value1 << "\n";
+    std::cout << "&reference_to_double_value1 : " << &reference_to_double_value1 << "\n";
+
+    reference_to_int_value1 = 10000;
+    reference_to_double_value1 = 2.3;
+
+    std::cout << "int_value : " << int_value << "\n";
+    std::cout << "&int_value : " << &int_value << "\n";
+    std::cout << "double_value : " << double_value << "\n";
+    std::cout << "&double_value : " << &double_value << "\n";
+
+    std::cout << "===============\n";
+
+    std::cout << "reference_to_int_value1 : " << reference_to_int_value1 << "\n";
+    std::cout << "&reference_to_int_vlaue1 : " << &reference_to_int_value1 << "\n";
+    std::cout << "reference_to_double_value1 : " << reference_to_double_value1 << "\n";
+    std::cout << "&reference_to_double_value1 : " << &reference_to_double_value1 << "\n";
+
+
     return 0;
 }

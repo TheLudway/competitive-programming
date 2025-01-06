@@ -20,6 +20,8 @@ int main(){
     std::cout << "age : " << age << "\n";
     std::cout << "ref_age : " << ref_age << "\n";
 
+    const int * const p_age {&age};
+
 
 
 

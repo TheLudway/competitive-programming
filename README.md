@@ -10,6 +10,14 @@ Estoy compilando todo usando `g++` con el siguiente formato:
 g++ nombre_programa.cpp -g -o main
 ```
 
+Cuando me toca compilar muchos archivos, lo que hago es:
+
+``` sh
+g++ ./* -g -o main
+```
+
+Para esto, toca asegurarse de que todo sean archivos, nada de binarios ni directorios.
+
 Esto lo hago para luego poder debuggear con `gdb` de manera más cómoda (para eso sirve la bandera `-g`). Entonces, para debuggear lo único que hago es:
 
 ``` sh

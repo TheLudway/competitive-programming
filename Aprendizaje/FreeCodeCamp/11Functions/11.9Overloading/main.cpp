@@ -40,7 +40,8 @@ int main(){
     auto result_2 = max(x, y);
     std::cout << sizeof(result_2) << endl;
     auto result_3 = max(a, b, c);
-    auto result_4 = max(w, e, x);
+    std::cout << result_3 << endl;
+    auto result_4 = max(w, e);
     std::cout << result_4 << endl;
 
 

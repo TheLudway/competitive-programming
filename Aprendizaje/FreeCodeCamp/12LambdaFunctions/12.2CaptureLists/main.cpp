@@ -60,6 +60,47 @@ int main (){
     }
 
     
+    /**
+     * Capturar todo por valores.
+     * La sintaxis es poner un = en la capture list y listop, ya se pueden utilizar
+     * dentro de la funcion lambda, todas las variables globales declaradas.
+     * Esto teniendo en cuenta que son copias de los valores de las variables.
+     */
+
+    int e {45};
+
+    auto func4 = [=](){
+        std::cout << "Inner value : " << e << endl;
+    };
+
+    for (size_t i {}; i < 5 ; ++i ){
+        std::cout << "Outer value : " << e << endl;
+        func4();
+        ++e;
+    }
+
+    /**
+     * Capturar todo por referencia.
+     * Si se desean realizar modificaciones a las variables globales dentro de lo
+     * que se hace en las funciones lambda, entonces es suficente utilizar un
+     * ampersand, y listop, se puede utilizar y tener valores actualizados de las
+     * variables.
+     */
+    int f {42};
+    double g {12.1};
+
+    auto func5 = [&](){
+        std::cout << "Inner value f : " << f << endl;
+        std::cout << "Inner value g : " << g << endl;
+    };
+
+    for (size_t i{}; i < 5; ++i){
+        std::cout << "Outer value f : " << f << endl;
+        std::cout << "Outer value g : " << g << endl;
+        func5();
+        ++f;
+        g += 0.5;
+    }
 
 
     return 0;

@@ -5,9 +5,9 @@ import math
 import time 
 
 # Define constants
-L = 1.0
-W = 1.0
-N = 10**6  # 10^6
+L = 1
+W = 1
+N = 10**8  # 10^6
 time_1 = time.time()
 # Generate random numbers
 X1 = [random.uniform(0, W) for _ in range(N)]

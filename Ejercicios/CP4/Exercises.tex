@@ -8,7 +8,7 @@
 \usepackage{float}
 \usepackage[hidelinks]{hyperref}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish,es-nodecimaldot]{babel}
 \usepackage{framed}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tcolorbox}
@@ -108,7 +108,65 @@ No sé
 Esto debido a que cuando el problema es muy fácil se tiende a omitir casos de prueba que no se toman en cuenta al momento de realizar la solución. La mayoría de veces estos casos especiales suelen ser un \texttt{if}, por lo tanto, son fáciles de sacar.
 
 
-\subsubsection{}
+\subsubsection{You receive a TLE verdict for your $O(N^{3})$ solution. However, the maximum $N$ is just 100. What you should do?}
+
+
+\begin{itemize}
+  \item Improve the performance of your solution (code optimizations/better algorithme)
+\end{itemize}
+
+A pesar de que el peor algoritmo que sea AC para un $N$ de 100 es uno con $O(N^{4})$, el TLE pasar por tiempo, entonces se buscaría una mejor optimización o mejor algoritmo para el código.
+
+
+\subsubsection{Follow up to Question above: What if the maximum $N$ is 100 000?}
+
+
+Para un $N$ tan largo de 100 000 se buscará un algoritmo con una complejidad menor a $O(n^{1.5})$. Es decir, la opción:
+
+\begin{itemize}
+  \item Improve the performance of your solution (code optimizations/better algorithm).
+\end{itemize}
+
+
+\subsubsection{Another follow up Question: What if the maximum $N$ is 5000, the output only depends on the size of input $N$, and you still have four hours of competition time left?}
+
+
+Si la solución a la que pude llegar es de $O(N^{4})$ y para un $N$ máximo de 5000 se necesita un algoritmo de $O(n^{2})$, entonces pasaría a un problema mucho más fácil teniendo en cuenta que faltando 4 horas de competencia es que hasta ahora ha empezado y toca ir por el problema de regalo de la competición.
+
+
+\subsubsection{You receive an RTE verdict. Your code (seems to) execute perfectly on your machine. What should you do?}
+
+
+Con este \textit{Run Time Error} (RTE) yo verificaría la versión a la que estoy compilando (o ejecutando) mi lenguaje de programación y la pondría a comparación con la que está en el documento explicativo con las versiones de los lenguajes. También, si mi lenguaje requiere de compilarse, verifico con qué opciones estoy compilando el programa y las comparo con el aplicativo.
+
+
+\subsubsection{Thirty minutes into the contest, you take a glance at the scoreboard. There are \textit{many} other teams that have solved a problem $X$ that your team has not attempted. What should you do?}
+
+
+En las competencias siempre hay un problema de ``\textit{regalo}'', por lo tanto, si veo que muchos equipos ya completaron el problema $X$, le diría al equipo (o a uno de ellos) que lo vaya solucionando si es muy fácil, o también, hacerlo entre todos, aunque si el equipo tiene buen nivel, se puede dejar a una persona haciendo el problema de regalo y los otros ir pensando los otros.
+
+
+\subsubsection{Midway through the contest, you take a glance at the scoreboard. The leading team (assume that it is not your team) has just solved problem $Y$. What should you do?}
+
+
+Seguir en el problema que estaba, si algo, le digo a un miembro del equipo que le eche una mirada al problema $Y$ y si está posible de realizar, entonces le damos, si no, a seguir con el que estábamos.
+
+\subsubsection{Your team has spent two hours on a nasty problem. You have submitted several implementations by different team members. All submissions have been judged incorrect. You have no idea what's wrong. What should you do?}
+
+
+Podría tomar dos diferentes caminos:
+
+\begin{enumerate}
+  \item Pedir un descanso en el equipos para tomar aíre y tener ideas más frescas.
+  \item Seguir a otro problema y dejar este para lo último de la competencia.
+\end{enumerate}
+
+
+\subsubsection{There is one hour to go before the end of the contest. You have 1 WA code and 1 fresh idea for \textit{another} problem. What should you (or your team) do?}
+
+Si mi equipo tiene un nivel decente, pondría a la persona con la idea a hacer este nuevo problema y que los otros sigan debuggeando el problema con el WA.
+
+
 
 
 
